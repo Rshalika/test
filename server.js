@@ -48,6 +48,11 @@ app.get('/ebayPostBid', function (req, res) {
 
 });
 
+app.get('/ebayViewBid', function (req, res) {
+    res.render('ebayItemSold.html', {pageCountMessage: null});
+
+});
+
 app.get('/delcampeLogin', function (req, res) {
     res.render('delcampeLogin.html', {pageCountMessage: null});
 
