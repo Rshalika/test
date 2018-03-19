@@ -38,7 +38,7 @@ app.get('/delcampeLogin', function (req, res) {
 
 });
 
-app.get('/delcampeLoginCheck', function (req, res) {
+app.post('/delcampeLoginCheck', function (req, res) {
     res.header("Location", "https://www.delcampe.net/").status(302).send()
 
 });
