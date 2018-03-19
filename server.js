@@ -43,7 +43,7 @@ app.get('/ebayMaxbid', function (req, res) {
 
 });
 
-app.get('/ebayPostBid', function (req, res) {
+app.post('/ebayPostBid', function (req, res) {
     res.status(200).send()
 
 });
