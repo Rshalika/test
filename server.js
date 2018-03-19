@@ -33,6 +33,11 @@ app.get('/ebayHome', function (req, res) {
 
 });
 
+app.get('/delcampeItem', function (req, res) {
+    res.render('delcampeItem.html', {pageCountMessage: null});
+
+});
+
 
 app.use(function (err, req, res, next) {
     console.error(err.stack);
