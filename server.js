@@ -33,6 +33,21 @@ app.get('/ebayHome', function (req, res) {
 
 });
 
+app.get('/ebayBid', function (req, res) {
+    res.render('ebayItemBid.html', {pageCountMessage: null});
+
+});
+
+app.get('/ebayMaxbid', function (req, res) {
+    res.render('ebayConfirmBid.html', {pageCountMessage: null});
+
+});
+
+app.get('/ebayPostBid', function (req, res) {
+    res.status(200).send()
+
+});
+
 app.get('/delcampeLogin', function (req, res) {
     res.render('delcampeLogin.html', {pageCountMessage: null});
 
