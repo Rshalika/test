@@ -16,7 +16,7 @@ app.get('/', function (req, res) {
 
 });
 
-app.get('/ws/eBayISAPI.dll?SignIn', function (req, res) {
+app.get('/ws/eBayISAPI.dll/signIn', function (req, res) {
     res.render('ebayLogin.html', {pageCountMessage: null});
 
 });
@@ -28,7 +28,7 @@ app.post('/ws/eBayISAPI.dll?co_partnerId=2&siteid=0&UsingSSL=1', function (req, 
 });
 
 
-app.post('/ebayHome', function (req, res) {
+app.get('/ebayHome', function (req, res) {
     res.render('ebayHome.html', {pageCountMessage: null});
 
 });
