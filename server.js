@@ -33,8 +33,28 @@ app.get('/ebayHome', function (req, res) {
 
 });
 
+app.get('/delcampeLogin', function (req, res) {
+    res.render('delcampeItem.html', {pageCountMessage: null});
+
+});
+
+app.get('/delcampeLoginCheck', function (req, res) {
+    res.status(200).send()
+
+});
+
 app.get('/delcampeItem', function (req, res) {
     res.render('delcampeItem.html', {pageCountMessage: null});
+
+});
+
+app.get('/delcampeBid', function (req, res) {
+    res.render('delcampeItemSold.html', {pageCountMessage: null});
+
+});
+
+app.post('/delcampePostBid', function (req, res) {
+    res.status(200).send()
 
 });
 
