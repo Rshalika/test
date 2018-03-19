@@ -34,7 +34,7 @@ app.get('/ebayHome', function (req, res) {
 });
 
 app.get('/delcampeLogin', function (req, res) {
-    res.render('delcampeItem.html', {pageCountMessage: null});
+    res.render('delcampeLogin.html', {pageCountMessage: null});
 
 });
 
