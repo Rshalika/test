@@ -38,7 +38,7 @@ app.get('/delcampeItem', function (req, res) {
 
 });
 
-app.get('/buy/browse/v1/item/*', function (req, res) {
+app.get('/buy/browse/v1/item/v1|263557932538|0', function (req, res) {
 
     res.status(200).send({
         "itemId": "v1|263557932538|0",
