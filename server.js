@@ -22,7 +22,7 @@ app.get('/ws/eBayISAPI.dll/signIn', function (req, res) {
 });
 
 
-app.post('/ws/eBayISAPI.dll?co_partnerId=2&siteid=0&UsingSSL=1', function (req, res) {
+app.post('/ws/eBayISAPI.dll/signInPost', function (req, res) {
     res.end()
 
 });
